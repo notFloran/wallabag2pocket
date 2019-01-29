@@ -13,21 +13,21 @@
   // on click
   convertButton.addEventListener('click', function () {
 
-    var items = JSON.parse(readabilityTA.value).bookmarks,
+    var items = JSON.parse(readabilityTA.value),
       linkIdx,
       item,
       archivedItems = '',
       unreadItems = '';
 
-    for (linkIdx = 0; linkIdx < items.length; linkIdx++) {
-      item = items[linkIdx];
-      if (item.archive) {
-        archivedItems += '<li><a href="' + item.article__url + '">' + item.article__title + '</a>: ' + item.article__excerpt + '</li>';
+    items.forEach(function(item) {
+      if (item.is_archived == 1) {
+        archivedItems += '<li><a href="' + item.url + '">' + item.title + '</a>: </li>';
       } else {
-        unreadItems += '<li><a href="' + item.article__url + '">' + item.article__title + '</a>: ' + item.article__excerpt + '</li>';
+        unreadItems += '<li><a href="' + item.url + '">' + item.title + '</a>: </li>';
       }
-    }
+    });
 
     instapaperTA.value = before + archivedItems + between + unreadItems + after;
   }, false);
 })();
+
