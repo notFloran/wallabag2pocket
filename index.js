@@ -2,7 +2,7 @@
 
   // DOM elements
   var convertButton = document.getElementById('convert'),
-    readabilityTA = document.getElementById('readability-json'),
+    wallabagTA = document.getElementById('wallabag-json'),
     instapaperTA = document.getElementById('instapaper-html');
 
   // export templates
@@ -13,7 +13,7 @@
   // on click
   convertButton.addEventListener('click', function () {
 
-    var items = JSON.parse(readabilityTA.value),
+    var items = JSON.parse(wallabagTA.value),
       linkIdx,
       item,
       archivedItems = '',

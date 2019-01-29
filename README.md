@@ -1,6 +1,9 @@
-readability2pocket
-==================
+# wallabag2pocket
 
-Export your readability links to pocket.
+Export your Wallabag links to pocket.
 
-Use it here : http://hsablonniere.github.com/readability2pocket.
+Use it here : https://notfloran.github.io/wallabag2pocket/
+
+## Credits
+
+Forked from https://github.com/hsablonniere/readability2pocket

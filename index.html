@@ -2,24 +2,11 @@
 <html>
 <head>
   <title>Wallabag 2 pocket (read it later) converter</title>
-
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
 
   <link rel="stylesheet" href="index.css">
   <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-31547032-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
 </head>
 <body>
 <h1>Wallabag 2 pocket (read it later) converter</h1>
@@ -27,10 +14,10 @@
 <p>If by any chance you feel like moving from Wallabag to pocket (formerly read it later), you've come to the right place!! This tool will help you to export your reading list from Wallabag and transform them to a format that can be imported in pocket.<p>
 <p>Here's what you need to do :</p>
 <ol>
-  <li>Go to your <a href="https://www.readability.com/account/export">readability export</a> page and click on the export button. This will download a
+  <li>Go to your wallabag instance and click on the export button. This will download a
     <code>.json</code> file.</li>
   <li>Copy the content of the <code>.json</code> file you just downloaded and paste it here :
-    <textarea id="readability-json" placeholder="paste your readability export here..."></textarea>
+    <textarea id="wallabag-json" placeholder="paste your wallabag export here..."></textarea>
   </li>
   <li><button id="convert">Click here to convert!</button></li>
   <li>Copy the content from the area (just after) and save it to an <code>.html</code> file :
@@ -40,9 +27,12 @@
   <li>Enjoy your articles on pocket...</li>
 </ol>
 
-<p>If you have any problem using this tool or if you think you can improve it. Please visit the <a href="https://github.com/hsablonniere/readability2pocket">github</a> page and give your thoughts.</p>
+<p>If you have any problem using this tool or if you think you can improve it. Please visit the <a href="https://github.com/notfloran/wallabag2pocket">github</a> page and give your thoughts.</p>
 
-<footer><a href="https://twitter.com/#!/hsablonniere">@hsablonniere</a></footer>
+<footer>
+    <a href="https://twitter.com/notfloran">@notFloran</a>
+  <a href="https://twitter.com/hsablonniere">Orginal works by @hsablonniere</a>
+</footer>
 
 <script type="text/javascript" src="index.js"></script>
 </body>
